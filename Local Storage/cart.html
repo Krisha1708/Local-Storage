@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        }
+        
+        nav {
+            padding: 25px 50px 0;
+            height: 50px;
+            margin-bottom: 20px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            font-size: large;
+            font-weight: bolder;
+        }
+        
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+        
+        nav a:hover{
+            cursor: pointer;
+        }
+        #content{
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+        }
+        #content > div{
+           margin: 15px;
+           border: 2px solid black;
+           width: 250px;
+           height: 150px;
+           text-align: center;
+           background: rgb(214, 207, 207);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+    <div id="content"></div>
+</body>
+</html>
+
+<script src="cart.js"></script>
